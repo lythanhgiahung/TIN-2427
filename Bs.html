@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"></meta>
-        <title>Sắp xếp</title>
+        <title>Chặt nhị phân</title>
         <link rel="stylesheet" type="text/css" href="main2.css">
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -18,19 +18,36 @@
             </ul>
             <h1>CHẶT NHỊ PHÂN</h1>
             <p>
+                Trong khoa học máy tính, tìm kiếm nhị phân (tiếng Anh: binary search), còn gọi là tìm kiếm nửa khoảng (half-interval search),[1] tìm kiếm logarit (logarithmic search),[2] hay chặt nhị phân (binary chop),[3] là một thuật toán tìm kiếm xác định vị trí của một giá trị cần tìm trong một mảng đã được sắp xếp.[4][5] Thuật toán tiến hành so sánh giá trị cần tìm với phần tử đứng giữa mảng. Nếu hai giá trị không bằng nhau, phần nửa mảng không chứa giá trị cần tìm sẽ bị bỏ qua và tiếp tục tìm kiếm trên nửa còn lại, một lần nữa lấy phần tử ở giữa và so sánh với giá trị cần tìm, cứ thế lặp lại cho đến khi tìm thấy giá trị đó. Nếu phép tìm kiếm kết thúc khi nửa còn lại trống thì giá trị cần tìm không có trong mảng.
             </p>
-            <h2></h2>
+            <h2>Ví dụ</h2>
+            <div class="high">
+                <p>Cho một dãy A đã sắp xếp tăng dần và x cho trước, kiểm tra xem x có trong dãy A không?</p>
+            </div>
             <p>
+                Đối với bài toán này có hai phương án giải và có thể đa phần các bạn sẽ tìm kiếm tuần tự, duyệt các phần tử từ đầu đến cuối 
+                và kiểm tra xem x có trong dãy không. Nhưng giải thuật này tốn rất nhiều thời gian nên ta sẽ chuyển qua phương án giải còn lại 
+                là chặt nhị phân.
+            <br>Ví dụ ta có A=[0,5,13,19,22,41,55,68,72,81,98] và x=55, thuật toán sẽ diễn ra như hình dưới:
             </p>
-            <img src="" alt="">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
+            <img src="https://wiki.vnoi.info/uploads/binary_search_first_example.png" alt="Minh họa" style="width: 100%;">
+            <p>
+                Ở lượt đầu tiên, không gian tìm kiếm của ta là tập hợp S={1..11} gồm tất cả các phần tử trong mảng. Bắt đầu 
+                từ việc chọn phần tử trung vị của tập hợp S hiện tại là 6, ta thấy A[6]=41 < 55=x. Do theo đề bài, mảng A đã sắp xếp 
+                tăng dần nên ta biết rằng các phần tử có vị trí từ 1..6 đều nhỏ hơn x, lúc này không gian tìm kiếm thu hẹp lại S={7..11}, tức giảm đi một nửa.
+            <br>Tương tự ở lượt thứ hai, ta xét phần tử trung vị của S là 9, nhận thấy A[9]=72 > 55=x. Ta biết được tất cả các phần tử có vị trí từ 9..11 đều lớn hơn x.
+                Lúc này không gian tìm kiếm giảm đi một nữa S={7..8}
+            <br>Ở lượt cuối cùng, ta cũng xét phần tử trung vị của S là 7(ở mảng có số lượng phần tử chẵn ta có 2 trung vị, ta có thể chọn trung vị nào cũng được. Trong ví dụ này 
+                ta chọn trung vị thứ nhất). Nhận thấy A[7]=55=x, ta kết luận x=55 có trong mảng.
+            </p>
+            <img src="img/Bs.png" alt="Code minh họa">
             <img src="" alt="">
             <img src="" alt="">
         </div>
         <div class="tag">
             <h1>LUYỆN TẬP</h1>
+            <h1>XEM THÊM</h1>
+            <a href="https://wiki.vnoi.info/algo/basic/Binary-Search">Binary Search VNOI</a>
         </div>
     </body>
 </html>
