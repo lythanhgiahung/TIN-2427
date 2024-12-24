@@ -1,7 +1,7 @@
 section .signup
 {
   position: absolute;
-  width: 40%;
+  width: 30%;
   top: 15%;
   background: #222;  
   z-index: 1000;
