@@ -83,7 +83,7 @@ section .item .LINK{
     width: 100px;
     height: 50px;
     border-radius: 25px;
-    background-color: rgb(227, 100, 208);
+    background-color: rgb(0, 162, 255);
     color: white;
     font-size: 20px;
     transition: 250ms;
@@ -91,6 +91,7 @@ section .item .LINK{
     justify-content: center;
     padding: 13px;
     transition: 250ms;
+    text-decoration: none;
 }
 section .item a.LINK:hover{
     cursor: pointer;
