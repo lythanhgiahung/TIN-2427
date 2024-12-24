@@ -76,3 +76,22 @@ section .containner .dots li{
 section .containner .dots li.active{
     width: 30px;
 }
+section .item .LINK{
+    position: absolute;
+    bottom: 50px;
+    left: 150px;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(227, 100, 208);
+    color: white;
+    font-size: 20px;
+    transition: 250ms;
+    text-align: center;
+    justify-content: center;
+    padding: 13px;
+    transition: 250ms;
+}
+section .item a.LINK:hover{
+    cursor: pointer;
+}
