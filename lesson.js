@@ -1,4 +1,4 @@
-let ID=['Sort','Bs','Twopointer'];
+let ID=['Sort','Bs','Twopointer','Ps'];
 let f=document.querySelectorAll('.board ul li');
 
 f.forEach((li,key) => {
