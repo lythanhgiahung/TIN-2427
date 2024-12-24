@@ -1,0 +1,185 @@
+section .signup
+{
+  position: absolute;
+  width: 40%;
+  top: 15%;
+  background: #222;  
+  z-index: 1000;
+  display: flex;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0,0,0,9);
+  justify-content: center;
+  height: 70%;
+}
+.signup .form{
+    position: relative;
+}
+.form h1{
+    font-size: 30px;
+    color: white;
+    padding: 0px 15%;
+}
+
+
+.field1{
+    position: relative;
+    top: 25px;
+}
+.field1 input{
+    color: black;
+    background-color: white;
+    padding: 0.625rem;
+    border: 2px solid gray;
+    width: 200px;
+}
+.field1 label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 0.625rem 0.625rem;
+    color: black;
+    background-color: white;
+    padding-inline: 0.25rem;
+    border: 2px solid transparent;
+    pointer-events: none;
+    transition: translate 250ms,
+                background-color 250ms,
+                border-color 250ms;
+}
+.field1:focus-within label,
+.field1:not(:has(:placeholder-shown)) label{
+    translate: 0.625rem -1rem;
+    border-color: black;
+}
+.field1::placeholder{
+    color: transparent;
+}
+
+
+
+.field2{
+    position: relative;
+    top: 55px;
+}
+.field2 input{
+    color: black;
+    background-color: white;
+    padding: 0.625rem;
+    border: 2px solid gray;
+    width: 200px;
+}
+.field2 label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 0.625rem 0.625rem;
+    color: black;
+    background-color: white;
+    padding-inline: 0.25rem;
+    border: 2px solid transparent;
+    pointer-events: none;
+    transition: translate 250ms,
+                background-color 250ms,
+                border-color 250ms;
+}
+.field2:focus-within label,
+.field2:not(:has(:placeholder-shown)) label{
+    translate: 0.625rem -1rem;
+    border-color: black;
+}
+.field2::placeholder{
+    color: transparent;
+}
+
+.field3{
+    position: relative;
+    top: 85px;
+}
+.field3 input{
+    color: black;
+    background-color: white;
+    padding: 0.625rem;
+    border: 2px solid gray;
+    width: 200px;
+}
+.field3 label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 0.625rem 0.625rem;
+    color: black;
+    background-color: white;
+    padding-inline: 0.25rem;
+    border: 2px solid transparent;
+    pointer-events: none;
+    transition: translate 250ms,
+                background-color 250ms,
+                border-color 250ms;
+}
+.field3:focus-within label,
+.field3:not(:has(:placeholder-shown)) label{
+    translate: 0.625rem -1rem;
+    border-color: black;
+}
+.field3::placeholder{
+    color: transparent;
+}
+
+
+
+.field4{
+    position: relative;
+    top: 115px;
+}
+.field4 input{
+    color: black;
+    background-color: white;
+    padding: 0.625rem;
+    border: 2px solid gray;
+    width: 200px;
+}
+.field4 label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 0.625rem 0.625rem;
+    color: black;
+    background-color: white;
+    padding-inline: 0.25rem;
+    border: 2px solid transparent;
+    pointer-events: none;
+    transition: translate 250ms,
+                background-color 250ms,
+                border-color 250ms;
+}
+.field4:focus-within label,
+.field4:not(:has(:placeholder-shown)) label{
+    translate: 0.625rem -1rem;
+    border-color: black;
+}
+.field4::placeholder{
+    color: transparent;
+}
+
+
+.b{
+    position: absolute;
+    bottom: 20%;
+    width: 80%;
+}
+.b ul{
+    position: relative;
+    left: 20%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+.b ul li{
+    display: inline;
+}
+.b ul li a{
+    color: white;
+    text-decoration: none;
+}
